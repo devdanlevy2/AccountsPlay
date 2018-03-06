@@ -1,0 +1,57 @@
+<%= form_with(model: red_account, local: true) do |form| %>
+  <% if red_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(red_account.errors.count, "error") %> prohibited this red_account from being saved:</h2>
+
+      <ul>
+      <% red_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :red_account_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :red_account_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountBalance %>
+    <%= form.number_field :accountBalance, id: :red_account_accountBalance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountLimit %>
+    <%= form.number_field :accountLimit, id: :red_account_accountLimit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :paymentDate %>
+    <%= form.date_select :paymentDate, id: :red_account_paymentDate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userID %>
+    <%= form.text_field :userID, id: :red_account_userID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :integer %>
+    <%= form.text_field :integer, id: :red_account_integer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apr %>
+    <%= form.text_field :apr, id: :red_account_apr %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

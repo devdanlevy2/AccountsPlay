@@ -1,0 +1,2 @@
+module RedAccountsHelper
+end

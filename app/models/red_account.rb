@@ -1,0 +1,2 @@
+class RedAccount < ApplicationRecord
+end

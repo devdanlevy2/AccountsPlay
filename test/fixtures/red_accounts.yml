@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  accountBalance: 1
+  accountLimit: 1
+  paymentDate: 2018-03-05
+  userID: MyString
+  integer: MyString
+  apr: 
+
+two:
+  id: 1
+  name: MyString
+  accountBalance: 1
+  accountLimit: 1
+  paymentDate: 2018-03-05
+  userID: MyString
+  integer: MyString
+  apr: 

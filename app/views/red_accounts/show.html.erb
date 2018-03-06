@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @red_account.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @red_account.name %>
+</p>
+
+<p>
+  <strong>Accountbalance:</strong>
+  <%= @red_account.accountBalance %>
+</p>
+
+<p>
+  <strong>Accountlimit:</strong>
+  <%= @red_account.accountLimit %>
+</p>
+
+<p>
+  <strong>Paymentdate:</strong>
+  <%= @red_account.paymentDate %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @red_account.userID %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @red_account.integer %>
+</p>
+
+<p>
+  <strong>Apr:</strong>
+  <%= @red_account.apr %>
+</p>
+
+<%= link_to 'Edit', edit_red_account_path(@red_account) %> |
+<%= link_to 'Back', red_accounts_path %>

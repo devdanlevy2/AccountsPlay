@@ -1,11 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README is an introduction to the accountsPlay app.  The purpose of this is to
+play around with some of the ideas that I will use to create a personal finance app
+for the economically challenged couple.
 
-Things you may want to cover:
+Basics:
 
-* Ruby version
+* Ruby version -ruby 2.4.1p111
 
 * System dependencies
 
