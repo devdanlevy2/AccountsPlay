@@ -1,0 +1,2 @@
+class BlueAccount < ApplicationRecord
+end

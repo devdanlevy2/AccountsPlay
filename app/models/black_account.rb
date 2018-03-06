@@ -1,0 +1,2 @@
+class BlackAccount < ApplicationRecord
+end

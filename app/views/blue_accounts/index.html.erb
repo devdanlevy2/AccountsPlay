@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blue Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Accountid</th>
+      <th>Name</th>
+      <th>Accountbalance</th>
+      <th>Address</th>
+      <th>Paymentdate</th>
+      <th>Userid</th>
+      <th>Contactinformation</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blue_accounts.each do |blue_account| %>
+      <tr>
+        <td><%= blue_account.Accountid %></td>
+        <td><%= blue_account.name %></td>
+        <td><%= blue_account.accountBalance %></td>
+        <td><%= blue_account.Address %></td>
+        <td><%= blue_account.paymentDate %></td>
+        <td><%= blue_account.userID %></td>
+        <td><%= blue_account.contactInformation %></td>
+        <td><%= link_to 'Show', blue_account %></td>
+        <td><%= link_to 'Edit', edit_blue_account_path(blue_account) %></td>
+        <td><%= link_to 'Destroy', blue_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blue Account', new_blue_account_path %>

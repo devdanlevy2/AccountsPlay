@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Accountid: 1
+  name: MyString
+  accountBalance: 1
+  Address: MyString
+  paymentDate: 2018-03-05
+  userID: 1
+  contactInformation: MyString
+
+two:
+  Accountid: 1
+  name: MyString
+  accountBalance: 1
+  Address: MyString
+  paymentDate: 2018-03-05
+  userID: 1
+  contactInformation: MyString

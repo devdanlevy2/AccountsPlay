@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accountid:</strong>
+  <%= @black_account.Accountid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @black_account.name %>
+</p>
+
+<p>
+  <strong>Accountbalance:</strong>
+  <%= @black_account.accountBalance %>
+</p>
+
+<p>
+  <strong>Accountlimit:</strong>
+  <%= @black_account.accountLimit %>
+</p>
+
+<p>
+  <strong>Apr:</strong>
+  <%= @black_account.apr %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @black_account.userId %>
+</p>
+
+<%= link_to 'Edit', edit_black_account_path(@black_account) %> |
+<%= link_to 'Back', black_accounts_path %>

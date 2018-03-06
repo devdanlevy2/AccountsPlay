@@ -1,0 +1,47 @@
+<%= form_with(model: black_account, local: true) do |form| %>
+  <% if black_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(black_account.errors.count, "error") %> prohibited this black_account from being saved:</h2>
+
+      <ul>
+      <% black_account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Accountid %>
+    <%= form.number_field :Accountid, id: :black_account_Accountid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :black_account_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountBalance %>
+    <%= form.number_field :accountBalance, id: :black_account_accountBalance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :accountLimit %>
+    <%= form.number_field :accountLimit, id: :black_account_accountLimit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apr %>
+    <%= form.number_field :apr, id: :black_account_apr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userId %>
+    <%= form.number_field :userId, id: :black_account_userId %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

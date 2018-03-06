@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Black Accounts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Accountid</th>
+      <th>Name</th>
+      <th>Accountbalance</th>
+      <th>Accountlimit</th>
+      <th>Apr</th>
+      <th>Userid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @black_accounts.each do |black_account| %>
+      <tr>
+        <td><%= black_account.Accountid %></td>
+        <td><%= black_account.name %></td>
+        <td><%= black_account.accountBalance %></td>
+        <td><%= black_account.accountLimit %></td>
+        <td><%= black_account.apr %></td>
+        <td><%= black_account.userId %></td>
+        <td><%= link_to 'Show', black_account %></td>
+        <td><%= link_to 'Edit', edit_black_account_path(black_account) %></td>
+        <td><%= link_to 'Destroy', black_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Black Account', new_black_account_path %>

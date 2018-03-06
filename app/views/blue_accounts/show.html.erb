@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accountid:</strong>
+  <%= @blue_account.Accountid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @blue_account.name %>
+</p>
+
+<p>
+  <strong>Accountbalance:</strong>
+  <%= @blue_account.accountBalance %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @blue_account.Address %>
+</p>
+
+<p>
+  <strong>Paymentdate:</strong>
+  <%= @blue_account.paymentDate %>
+</p>
+
+<p>
+  <strong>Userid:</strong>
+  <%= @blue_account.userID %>
+</p>
+
+<p>
+  <strong>Contactinformation:</strong>
+  <%= @blue_account.contactInformation %>
+</p>
+
+<%= link_to 'Edit', edit_blue_account_path(@blue_account) %> |
+<%= link_to 'Back', blue_accounts_path %>

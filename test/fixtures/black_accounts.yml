@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Accountid: 1
+  name: MyString
+  accountBalance: 1
+  accountLimit: 1
+  apr: 1
+  userId: 1
+
+two:
+  Accountid: 1
+  name: MyString
+  accountBalance: 1
+  accountLimit: 1
+  apr: 1
+  userId: 1
