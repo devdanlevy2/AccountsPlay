@@ -1,2 +1,3 @@
-class RedAccount < ApplicationRecord
+  class RedAccount < ApplicationRecord
+  belongs_to :user
 end

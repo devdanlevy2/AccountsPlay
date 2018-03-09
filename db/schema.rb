@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180306021151) do
+ActiveRecord::Schema.define(version: 20180309023313) do
 
   create_table "black_accounts", force: :cascade do |t|
     t.integer "Accountid"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20180306021151) do
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "userid"
   end
 
 end
